@@ -3,168 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="profile-section">
-        <div class="profile-image">
-            <img src="/image/saya1.jpg" alt="Profile Picture">
-        </div>
-        <div class="profile-text">
-            <h1>Hello, I'm</h1>
-            <h1>Hafizhan Noor Amril</h1>
-            <p>And this is my portofolio website, hope you like it .</p>
-        </div>
-    </section>
-    
-    
-    <!-- About Me -->
-    <section id="about" class="about">
-        <div class="container about-content">
-            <div class="about-image">
-                <img src="/image/saya.jpg" alt="Profile Picture">
+    <header>
+        <nav>
+            <a href="#" class="logo">My Portfolio</a>  
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="about-text">
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Experience</a></li>
+                <li><a href="#gallery">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <aside class="profile-image">
+                <img src="/image/saya1.jpg" alt="Profile Picture">
+            </aside>
+            <article class="profile-text">
+                <h1>Hello, I'm Hafizhan Noor Amril</h1>
+                <p>Welcome to my portfolio website. I hope you like it!</p>
+            </article>
+        </section>
+    
+        <section id="about" class="about">
+            <article>
                 <h2>About Me</h2>
-                <p>
-                    I am an undergraduate student at Gunadarma University majoring in Informatics, currently in my fifth semester. 
-                    The field I am focusing on in this major is web development. I have created several website projects recently. 
-                    In addition to my interest in web development, I also have skills in video editing and am passionate about 
-                    pursuing a career as a video editor.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- education skills -->
-    <section class="education-skills">
-        <div class="container">
-            <div class="education-skills-header">
-                <h2>Education and Skills</h2>
-                <p>This is my education history and some of my skills that I learned</p>
-            </div>
-            <div class="content">
-                <div class="education">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>Universitas Gunadarma 2022 - now</li>
-                        <li>SMAN 5 Kota Bogor 2019 - 2022</li>
-                    </ul>
-                </div>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>I can use some software for video editing like CapCut and Filmora</li>
-                        <li>Use VS Code to build some websites</li>
-                        <li>I can speak a little English</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+                <p>I am an undergraduate student at Gunadarma University majoring in Informatics. I specialize in web development and have worked on various projects. Additionally, I am skilled in video editing and aspire to be a professional video editor.</p>
+            </article>
+            <aside>
+                <img src="/image/saya.jpg" alt="About Me Image">
+            </aside>
+        </section>
     
-    <!-- Project Experience -->
-    <section class="project-experience">
-        <h1>Project Experience</h1>
-        <p>My project experience while I’m in my school or college</p>
-
-        <div class="timeline">
-            <div class="event">
+        <section id="education" class="education-skills">
+            <article>
+                <h2>Education</h2>
+                <ul>
+                    <li>Universitas Gunadarma (2022 - Present)</li>
+                    <li>SMAN 5 Kota Bogor (2019 - 2022)</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web development (HTML, CSS, JavaScript)</li>
+                    <li>Video editing (CapCut, Filmora)</li>
+                    <li>Basic English communication</li>
+                </ul>
+            </article>
+        </section>
+    
+        <section id="projects" class="projects">
+            <h2>Experience</h2>
+            <article>
                 <h3>Campus Project</h3>
                 <p>Doing campus project named “PT RUMAH SEHAT” on third semester</p>
-            </div>
-
-            <div class="event">
+            </article>
+            <article>
                 <h3>Brand Ambassador of “MBAHGAMING” store</h3>
                 <p>Promote their store in my youtube livestream</p>
-            </div>
-
-            <div class="event">
+            </article>
+            <article>
                 <h3>NontonAsik</h3>
                 <p>This is my campus project that i created mobile design application for movie app</p>
-            </div>
-        </div>
-    </section>
-
-<!-- My Gallery -->
-<section class="gallery-section">
-    <div class="container">
-        <header>
-            <h2>My Gallery</h2>
-            <p>This is a documentation of my project from college</p>
-        </header>
-        <div class="gallery">
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <a href="https://mockup-game-launcher.vercel.app/"><img src="/image/karosel.png" alt="Gaming Website"></a>
-                </div>
-                <h3>Gaming Website</h3>
-                <p>Little project that I created</p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <a href="https://game-launcher-two.vercel.app/"><img src="/image/GAMESCOM.png" alt="Gamescom"></a>
-                </div>
-                <h3>Gamescom</h3>
-                <p>Big project that I created for my thesis</p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <a href="https://www.figma.com/design/hnNUaVxvi7MGk7Y7EiRw9W/Movies-app-(low-fidelity-prototype)-(Community)?node-id=2008-4&t=Y13j2bW3zfDw8u24-1"><img src="/image/Nonton.png" alt="NontonAsik"></a>
-                </div>
-                <h3>NontonAsik</h3>
-                <p>This is just a design but I plan to improve it</p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <a href="https://akubatu.github.io/Project_AP3/index.html"><img src="/image/PT.png" alt="PT Rumah Sehat"></a>
-                </div>
-                <h3>PT Rumah Sehat</h3>
-                <p>Little project from my campus</p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <a href="https://first-project-1z3tjd218-hafizhan-noor-amrils-projects.vercel.app/"><img src="/image/AKUBATU.png" alt="AKUBATU"></a>
-                </div>
-                <h3>AKUBATU</h3>
-                <p>My first project that I learned from YouTube</p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <a href="https://kartu-profile-8hggago8y-hafizhan-noor-amrils-projects.vercel.app/"><img src="/image/card.png" alt="Profile Card"></a>
-                </div>
-                <h3>Profile Card</h3>
-                <p>I made my own profile card</p>
-            </div>
-        </div>
-    </div>
-</section>
+            </article>
+            <article>
+                <h3>Youtube</h3>
+                <p>Posted a lot of video on youtube and a livestreamer</p>
+            </article>
+        </section>
     
-    <!-- Contact Me-->
-    <section class="contact-section">
-        <div class="contact-container">
-            <div class="image-wrapper">
-                <img src="/image/saya2.jpg" alt="Profile">
-            </div>
-            <div class="contact-details">
-                <h2>Get in touch</h2>
-                <p class="p">This is my contact and social media</p>
-                <div class="social-icons">
-                    <a href="https://github.com/AKUBATU"><img src="/image/github.svg" alt="github"></a>
-                    <a href="https://www.instagram.com/hafizhan_noor_20/"><img src="/image/instagram.svg" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/in/hafizhan-amril-3264b72a0/"><img src="/image/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://www.tiktok.com/@akubatu20"><img src="/image/tiktok.svg" alt="TikTok"></a>
-                    <a href="https://www.youtube.com/channel/UClSHrXr2CwzHo8YGuaqQjZQ"><img src="/image/YT.svg" alt="YouTube"></a>
+        <section id="gallery" class="gallery">
+            <h2>My Projects</h2>
+            <aside>
+                <img src="/image/GAMESCOM.jpg" alt="GAMESCOM">
+                <img src="/image/card.jpg" alt="card">
+                <img src="/image/AKUBATU.jpg" alt="AKUBATU">
+                <img src="/image/PT.jpg" alt="PT">
+                <img src="/image/Nonton.jpg" alt="Nonton">
+                <img src="/image/karosel.jpg" alt="karosel">
+            </aside>
+        </section>
+    
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="image-wrapper">
+                    <img src="/image/saya2.jpg" alt="Profile">
+                </div>
+                <div class="contact-details">
+                    <h2>Get in touch</h2>
+                    <p class="p">This is my contact and social media</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/AKUBATU"><img src="/image/github.svg" alt="github"></a>
+                        <a href="https://www.instagram.com/hafizhan_noor_20/"><img src="/image/instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/hafizhan-amril-3264b72a0/"><img src="/image/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="https://www.tiktok.com/@akubatu20"><img src="/image/tiktok.svg" alt="TikTok"></a>
+                        <a href="https://www.youtube.com/channel/UClSHrXr2CwzHo8YGuaqQjZQ"><img src="/image/YT.svg" alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Hafizhan Amril. All rights reserved.</p>
-        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Hafizhan Amril. All rights reserved.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
